@@ -1,0 +1,5 @@
+category: Database OCaml
+requires: ocaml ocaml-mysql ocaml-pcre ocaml-postgres ocaml-sqlite
+sdesc: "OCaml database-independent layer"
+ldesc: "ocamldbi is a database independent layer for Objective CAML 
+(OCaml) patterned upon Perl DBI."

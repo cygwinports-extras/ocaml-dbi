@@ -1,0 +1,121 @@
+ocaml-dbi
+------------------------------------------
+ocamldbi is a database independent layer for Objective CAML (OCaml) 
+patterned upon Perl DBI.
+
+Runtime requirements:
+  ocaml-3.10.0-1
+  ocaml-mysql-1.0.4-1
+  ocaml-pcre-5.12.2-1
+  ocaml-postgres-20040120-1
+  ocaml-sqlite-0.3.5-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.3.8-1
+  flex-2.5.33-2
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://merjis.com/developers/mod_caml
+
+Canonical download:
+  http://download.savannah.gnu.org/releases/modcaml/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-dbi-0.9.13-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-dbi-0.9.13-X.cygport all
+
+This will create:
+  /usr/src/ocaml-dbi-0.9.13-X-src.tar.bz2
+  /usr/src/ocaml-dbi-0.9.13-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/dbi/META
+  /usr/lib/ocaml/3.10/dbi/dbi.a
+  /usr/lib/ocaml/3.10/dbi/dbi.cma
+  /usr/lib/ocaml/3.10/dbi/dbi.cmi
+  /usr/lib/ocaml/3.10/dbi/dbi.cmxa
+  /usr/lib/ocaml/3.10/dbi/dbi.mli
+  /usr/lib/ocaml/3.10/dbi/dbi_mysql.cmi
+  /usr/lib/ocaml/3.10/dbi/dbi_mysql.cmo
+  /usr/lib/ocaml/3.10/dbi/dbi_mysql.cmx
+  /usr/lib/ocaml/3.10/dbi/dbi_mysql.mli
+  /usr/lib/ocaml/3.10/dbi/dbi_mysql.o
+  /usr/lib/ocaml/3.10/dbi/dbi_postgres.cmi
+  /usr/lib/ocaml/3.10/dbi/dbi_postgres.cmo
+  /usr/lib/ocaml/3.10/dbi/dbi_postgres.cmx
+  /usr/lib/ocaml/3.10/dbi/dbi_postgres.mli
+  /usr/lib/ocaml/3.10/dbi/dbi_postgres.o
+  /usr/lib/ocaml/3.10/dbi/dbi_sqlite.cmi
+  /usr/lib/ocaml/3.10/dbi/dbi_sqlite.cmo
+  /usr/lib/ocaml/3.10/dbi/dbi_sqlite.cmx
+  /usr/lib/ocaml/3.10/dbi/dbi_sqlite.mli
+  /usr/lib/ocaml/3.10/dbi/dbi_sqlite.o
+  /usr/share/doc/ocaml-dbi-0.9.13/AUTHORS
+  /usr/share/doc/ocaml-dbi-0.9.13/COPYING.LIB
+  /usr/share/doc/ocaml-dbi-0.9.13/FAQ
+  /usr/share/doc/ocaml-dbi-0.9.13/INSTALL
+  /usr/share/doc/ocaml-dbi-0.9.13/README
+  /usr/share/doc/ocaml-dbi-0.9.13/TODO
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi.Decimal.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi.statement.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi_mysql.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi_mysql.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi_postgres.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi_postgres.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi_sqlite.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi_sqlite.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/Dbi_sqlite.statement.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_attributes.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_class_types.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_classes.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_exceptions.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_methods.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_module_types.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_modules.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_types.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/index_values.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi.Decimal.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi.statement.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi_mysql.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi_mysql.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi_postgres.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi_postgres.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi_sqlite.connection.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi_sqlite.html
+  /usr/share/doc/ocaml-dbi-0.9.13/html/type_Dbi_sqlite.statement.html
+
+------------------
+
+Port Notes:
+
+----- version 0.9.13-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,15 @@
+ORIG_PN="ocamldbi"
+inherit ocaml
+
+DESCRIPTION="OCaml Database-independent layer"
+HOMEPAGE="http://merjis.com/developers/mod_caml"
+#SRC_URI="http://download.savannah.nongnu.org/releases/modcaml/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="mirror://debian/pool/main/o/${ORIG_PN}/${ORIG_PN}_${PV}.orig.tar.gz"
+
+MAKEOPTS+=" -j1 HAVE_POSTGRESQL=0 HAVE_FREETDS=0"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
